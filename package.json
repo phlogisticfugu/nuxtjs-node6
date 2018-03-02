@@ -1,0 +1,27 @@
+{
+  "name": "nuxtjs-node6",
+  "version": "0.0.1",
+  "description": "A re-packaged nuxt.js library suitable for node6 environments",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phlogisticfugu/nuxtjs-node6.git"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt.js",
+    "nuxtjs",
+    "vue",
+    "vue.js",
+    "vuejs"
+  ],
+  "author": "Brad Ito <phlogisticfugu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phlogisticfugu/nuxtjs-node6/issues"
+  },
+  "homepage": "https://github.com/phlogisticfugu/nuxtjs-node6#readme"
+}
