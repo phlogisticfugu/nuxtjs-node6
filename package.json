@@ -1,6 +1,6 @@
 {
   "name": "nuxtjs-node6",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A re-packaged nuxt.js library suitable for node6 environments",
   "main": "./lib/index.js",
   "files": [
