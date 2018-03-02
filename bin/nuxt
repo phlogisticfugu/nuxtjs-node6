@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const join = require('path').join
+require('../lib/common/cli/errors')
+
+const defaultCommand = 'dev'
+const commands = new Set([
+  defaultCommand,
+  'init',
+  'build',
+  'start',
+  'generate'
+])
+
+var cmd = process.argv[2]
+
+if (commands.has(cmd)) {
+  process.argv.splice(2, 1)
+} else {
+  cmd = defaultCommand
+}
+
+const bin = join(__dirname, 'nuxt-' + cmd)
+
+require(bin)

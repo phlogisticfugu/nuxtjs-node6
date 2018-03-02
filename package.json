@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "A re-packaged nuxt.js library suitable for node6 environments",
   "main": "./lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "files": [
     "bin",
     "lib"
@@ -23,7 +20,11 @@
     "vuejs"
   ],
   "bin": {
-    "nuxtjs-node6": "./bin/nuxtjs-node6"
+    "nuxt": "./bin/nuxt"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
   },
   "author": "Brad Ito <phlogisticfugu@gmail.com>",
   "license": "MIT",
@@ -44,19 +45,23 @@
       ]
     ],
     "plugins": [
-      ["transform-runtime", {
-        "helpers": true,
-        "polyfill": true,
-        "regenerator": true,
-        "mooduleName": "babel-runtime"
-      }]
+      [
+        "transform-runtime",
+        {
+          "helpers": true,
+          "polyfill": true,
+          "regenerator": true,
+          "mooduleName": "babel-runtime"
+        }
+      ]
     ]
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "nuxt": "1.0"
+    "nuxt": "1.0.0",
+    "shelljs": "^0.8.1"
   },
   "dependencies": {
     "@nuxtjs/youch": "^4.2.3",
