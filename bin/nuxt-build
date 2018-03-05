@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
 
-// Show logs
-process.env.DEBUG = process.env.DEBUG || 'nuxt:*'
-
 const fs = require('fs')
 const parseArgs = require('minimist')
-const { Nuxt, Builder, Generator, Utils } = require('../')
+const { Nuxt, Builder, Generator, Utils } = require('..')
 const resolve = require('path').resolve
 const debug = require('debug')('nuxt:build')
 debug.color = 2 // Force green color
@@ -75,12 +72,20 @@ const builder = new Builder(nuxt)
 // Setup hooks
 nuxt.hook('error', (_err, from) => Utils.fatalError(_err, from))
 
+// Close function
+const close = () => {
+  if (options.build.analyze === true) {
+    return // Wait for user exit
+  }
+  process.exit(0)
+}
+
 if (options.mode !== 'spa') {
   // -- Build for SSR app --
   builder
     .build()
     .then(() => debug('Building done'))
-    .then(() => process.exit(0))
+    .then(() => close())
     .catch(err => {
       Utils.fatalError(err)
     })
@@ -110,6 +115,6 @@ if (options.mode !== 'spa') {
 
   // Generate dist for SPA static deployment
   new Generator(nuxt, builder).generate({ build: true }).then(() => {
-    process.exit(0)
+    close()
   })
 }
