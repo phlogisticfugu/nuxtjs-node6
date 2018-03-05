@@ -50,7 +50,7 @@
           "helpers": true,
           "polyfill": true,
           "regenerator": true,
-          "mooduleName": "babel-runtime"
+          "moduleName": "babel-runtime"
         }
       ],
       "transform-object-rest-spread"
