@@ -23,8 +23,7 @@
     "nuxt": "./bin/nuxt"
   },
   "engines": {
-    "node": ">=6.0.0",
-    "npm": ">=3.0.0"
+    "node": ">=6.10.0"
   },
   "author": "Brad Ito <phlogisticfugu@gmail.com>",
   "license": "MIT",
@@ -60,7 +59,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "nuxt": "1.0.0",
+    "nuxt": "1.1.1",
     "shelljs": "^0.8.1"
   },
   "dependencies": {
