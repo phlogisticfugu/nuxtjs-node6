@@ -59,7 +59,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "nuxt": "1.2.1",
+    "nuxt": "1.3.0",
     "shelljs": "^0.8.1"
   },
   "dependencies": {
@@ -105,12 +105,13 @@
     "postcss-url": "^7.3.0",
     "pretty-error": "^2.1.1",
     "progress-bar-webpack-plugin": "^1.10.0",
+    "semver": "^5.5.0",
     "serialize-javascript": "^1.4.0",
     "serve-static": "^1.13.1",
     "server-destroy": "^1.0.1",
     "source-map": "^0.6.1",
     "style-resources-loader": "git://github.com/phlogisticfugu/style-resources-loader-node6.git#v1.0.0",
-    "uglifyjs-webpack-plugin": "^1.1.6",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "upath": "^1.0.2",
     "url-loader": "^0.6.2",
     "util.promisify": "^1.0.0",
