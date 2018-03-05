@@ -1887,7 +1887,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^3.4.0:
+enhanced-resolve@^3.4.0, enhanced-resolve@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-3.4.1.tgz#0421e339fd71419b3da13d129b3979040230476e"
   dependencies:
@@ -3595,9 +3595,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.2.0.tgz#4e017d313fe3c1624679b1f682b2496459a1d756"
+nuxt@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.2.1.tgz#bea0cef7c0fb9a67b284d629cccb6e55a3bf5a04"
   dependencies:
     "@nuxtjs/youch" "^4.2.3"
     ansi-html "^0.0.7"
@@ -3635,6 +3635,7 @@ nuxt@1.2.0:
     postcss "^6.0.16"
     postcss-cssnext "^3.1.0"
     postcss-import "^11.0.0"
+    postcss-import-resolver "^1.1.0"
     postcss-loader "^2.0.10"
     postcss-url "^7.3.0"
     pretty-error "^2.1.1"
@@ -4184,6 +4185,12 @@ postcss-image-set-polyfill@^0.3.5:
   dependencies:
     postcss "^6.0.1"
     postcss-media-query-parser "^0.2.3"
+
+postcss-import-resolver@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-import-resolver/-/postcss-import-resolver-1.1.0.tgz#08a1a9811da625d28317abc31565a8408ff28cd2"
+  dependencies:
+    enhanced-resolve "^3.4.1"
 
 postcss-import@^11.0.0:
   version "11.1.0"
