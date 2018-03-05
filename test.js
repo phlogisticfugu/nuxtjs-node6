@@ -1,10 +1,3 @@
-console.log(process.env, 'process.env');
 
-const promise = new Promise();
-
-async function asyncFunc() {
-  console.log('foobar');
-}
-
-function* regenfunc() {
-}
+let y = {a: 5};
+let x = {...y};
