@@ -5303,6 +5303,10 @@ style-resources-loader@^1.0.0:
     glob "^7.1.2"
     loader-utils "^1.1.0"
 
+"style-resources-loader@git://github.com/phlogisticfugu/style-resources-loader-node6.git#v1.0.0":
+  version "1.0.0"
+  resolved "git://github.com/phlogisticfugu/style-resources-loader-node6.git#927df06aa29406a4c492c3bb8310b113d8b1a9a4"
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"

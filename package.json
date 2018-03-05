@@ -1,6 +1,6 @@
 {
   "name": "nuxtjs-node6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A re-packaged nuxt.js library suitable for node6 environments",
   "main": "./lib/index.js",
   "files": [
@@ -109,7 +109,7 @@
     "serve-static": "^1.13.1",
     "server-destroy": "^1.0.1",
     "source-map": "^0.6.1",
-    "style-resources-loader": "^1.0.0",
+    "style-resources-loader": "git://github.com/phlogisticfugu/style-resources-loader-node6.git#v1.0.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "upath": "^1.0.2",
     "url-loader": "^0.6.2",
