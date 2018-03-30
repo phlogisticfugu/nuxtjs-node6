@@ -31,6 +31,14 @@
     "url": "https://github.com/phlogisticfugu/nuxtjs-node6/issues"
   },
   "homepage": "https://github.com/phlogisticfugu/nuxtjs-node6#readme",
+  "scripts": {
+    "build-a": "babel node_modules/nuxt/lib/builder --out-dir ./lib/builder",
+    "build-b": "babel node_modules/nuxt/lib/common --out-dir ./lib/common",
+    "build-c": "babel node_modules/nuxt/lib/core --out-dir ./lib/core",
+    "build-d": "babel node_modules/nuxt/lib/index.js --out-file ./lib/index.js",
+    "build-e": "cp -R node_modules/nuxt/lib/app ./lib/app",
+    "build": "npm run build-a && npm run build-b && npm run build-c && npm run build-d && npm run build-e"
+  },
   "babel": {
     "presets": [
       [
@@ -41,7 +49,8 @@
             "node": "6.10"
           }
         }
-      ]
+      ],
+      "vue-app"
     ],
     "plugins": [
       [
