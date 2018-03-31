@@ -41,18 +41,6 @@
     "build": "npm run build-a && npm run build-b && npm run build-c && npm run build-d && npm run build-e && npm run build-f"
   },
   "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "loose": false,
-          "spec": true,
-          "targets": {
-            "node": "6.10"
-          }
-        }
-      ]
-    ],
     "plugins": [
       [
         "transform-runtime",
@@ -64,6 +52,18 @@
         }
       ],
       "transform-object-rest-spread"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "loose": false,
+          "spec": true,
+          "targets": {
+            "node": "6.10"
+          }
+        }
+      ]
     ]
   },
   "devDependencies": {
